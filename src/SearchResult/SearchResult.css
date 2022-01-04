@@ -1,0 +1,116 @@
+/* TODO: Make all of the margins responsive */
+/* change padding and margin units to rem to make more responsive? */
+/* This css file has been changed into a css module */
+
+:root {
+    /* Global CSS variables */
+    --primary: #fbe7a6;
+    --secondary: #F4976C;
+}
+
+.cardContainer {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 30px;
+    transition: 0.2s ease;
+    border: 2px solid var(--secondary);
+
+    margin-top: 2em;
+}
+
+.cardHeader {
+    background: var(--primary);
+    border-radius: 30px 30px 0px 0px;
+    padding: 0 16px;
+}
+
+.cardHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.cardHeaderStars {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    font-size: 10px;
+}
+
+.positionHeader {
+    margin-left: 20px;
+    margin-right: 40px;
+    max-height: 100px;
+}
+
+.positionHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    color: #042A2B;
+    font-family: Oxygen, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 38px;
+    text-transform: capitalize;
+
+    height: 3rem; /* This is a solution to the spacing issue but it's kind of wack */
+}
+
+.subheaderContainer {
+    display: flex;
+}
+
+.subheader {
+    font-family: Noto Serif, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 34px;
+    text-transform: capitalize;
+    margin-left: 25px;
+    border-bottom: 2px solid #F4976C;
+
+    height: 3.5rem;
+}
+
+.subheaderText {
+    margin-left: 0.5rem;
+}
+
+.content {
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: left;
+    line-height: 17px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* Media Queries */
+
+/* Mini Screen */
+/* The main reason for this screen size is that I need to stop the review cards from getting taller than it is wide. */
+@media (max-width: 580px) {
+    .cardContainer {
+        width: 90%;
+    }
+}
+
+/* LAPTOPS */
+@media (min-width: 768px) {
+
+}
+
+/* MONITORS */
+@media (min-width: 1280px) {
+    .cardHeaderStars {
+        width: 20%;
+    }
+}

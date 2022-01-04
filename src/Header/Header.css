@@ -1,0 +1,58 @@
+/*TODO: Ask if increasing header height or font size makes a difference */
+
+.navbar {
+    background: #FFA07A;
+    height: 80px;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.container {
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.navbarLogo {
+    position: absolute;
+    margin-left: 3em;
+    color: #000000;
+    justify-self: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 68px;
+    letter-spacing: -0.05em;
+    flex: 1;
+}
+
+/* LAPTOP & MONITOR (both are the same) */
+@media (min-width: 768px) {
+    .navBtn {
+        display: inline;
+    }
+
+    .navbarLogo {
+        justify-self: start;
+    }
+}
